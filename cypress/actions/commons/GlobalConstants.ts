@@ -10,4 +10,6 @@ export class GlobalConstants{
     public static login_UserApi: string="https://cloud-accretech.link/acct/1/server/resource/100/dev/auth/users"
 
     public static userAPI_inter: string="https://cloud-accretech.link/acct/1/server/resource/100/dev/f6fdffe48c908deb0f4c3bd36c032e72";
+
+
 }

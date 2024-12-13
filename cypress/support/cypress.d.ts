@@ -27,6 +27,7 @@ declare global {
             ):Chainable<any>;
             openUrl(url: string): Chainable<void>;
             postData(method: string,url: string, requestBody: object): Chainable<any>;
+            login(sessionValue: string): Chainable<void>;
         }
     }
 }

@@ -11,3 +11,14 @@ Cypress.Commands.add("openUrl", (url:string)=>{
         },
       })
     })
+Cypress.Commands.add("login", (sessionValue:string)=>{
+    // Kiểm tra xem giá trị sessionStorage có tồn tại hay không
+    if (sessionValue) {
+      cy.log('SessionStorage Value:', sessionValue);
+
+      // Giả sử bạn muốn lưu lại sessionValue vào cookie hoặc sử dụng trong những lần đăng nhập sau
+      cy.setCookie('nxgAuth_SS_user', sessionValue);
+    } else {
+      cy.log('No session value found.');
+    }
+    })
